@@ -19,6 +19,9 @@ class Config
         fin >> config;
         fin.close();
     }
+    // Функция reload() перезагружает настройки из файла settings.json
+    // Она открывает файл, считывает JSON-содержимое в объект config и закрывает файл
+    // Это позволяет обновить настройки во время работы программы без необходимости перезапуска
 
     auto operator()(const string &setting_dir, const string &setting_name) const
     {
