@@ -2,6 +2,7 @@
 
 int main(int argc, char* argv[])
 {
+    system("chcp 1251")
     Game g;
     g.play();
 
